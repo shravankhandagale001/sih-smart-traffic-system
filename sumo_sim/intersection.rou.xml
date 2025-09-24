@@ -1,7 +1,7 @@
 <routes>
-    <vType id="car" vClass="passenger" length="5" maxSpeed="13.9" color="random"/>
-    <vType id="truck" vClass="truck" length="7.5" guiShape="truck" maxSpeed="11.1" color="random"/>
-    <vType id="bus" vClass="bus" length="12" guiShape="bus" maxSpeed="12.5" color="random"/>
+    <vType id="car" vClass="passenger" length="5" maxSpeed="13.9" color="1,1,0"/>
+    <vType id="truck" vClass="truck" length="7.5" guiShape="truck" maxSpeed="11.1" color="0,1,1"/>
+    <vType id="bus" vClass="bus" length="12" guiShape="bus" maxSpeed="12.5" color="1,0,1"/>
 
     <route id="N_to_S" edges="N1_to_J1 J1_to_S1"/>
     <route id="N_to_W" edges="N1_to_J1 J1_to_W1"/>
@@ -18,26 +18,23 @@
     <route id="W_to_E" edges="W1_to_J1 J1_to_E1"/>
     <route id="W_to_N" edges="W1_to_J1 J1_to_N1"/>
     <route id="W_to_S" edges="W1_to_J1 J1_to_S1"/>
+
+    <flow id="car_N_S" type="car" route="N_to_S" begin="0" end="600" period="15"/>
+    <flow id="car_N_W" type="car" route="N_to_W" begin="0" end="600" period="45"/>
+    <flow id="car_N_E" type="car" route="N_to_E" begin="0" end="600" period="45"/>
+    <flow id="truck_N_S" type="truck" route="N_to_S" begin="0" end="600" period="60"/>
     
-    <flow id="car_N_S" type="car" route="N_to_S" begin="0" end="3600" probability="0.027"/>
-    <flow id="car_N_W" type="car" route="N_to_W" begin="0" end="3600" probability="0.009"/>
-    <flow id="car_N_E" type="car" route="N_to_E" begin="0" end="3600" probability="0.009"/>
-    <flow id="truck_N_S" type="truck" route="N_to_S" begin="0" end="3600" probability="0.008"/>
-    <flow id="bus_N_S" type="bus" route="N_to_S" begin="0" end="3600" probability="0.004"/>
+    <flow id="car_S_N" type="car" route="S_to_N" begin="0" end="600" period="18"/>
+    <flow id="car_S_E" type="car" route="S_to_E" begin="0" end="600" period="60"/>
+    <flow id="car_S_W" type="car" route="S_to_W" begin="0" end="600" period="60"/>
 
-    <flow id="car_S_N" type="car" route="S_to_N" begin="0" end="3600" probability="0.024"/>
-    <flow id="car_S_E" type="car" route="S_to_E" begin="0" end="3600" probability="0.008"/>
-    <flow id="car_S_W" type="car" route="S_to_W" begin="0" end="3600" probability="0.008"/>
-    <flow id="truck_S_N" type="truck" route="S_to_N" begin="0" end="3600" probability="0.007"/>
+    <flow id="car_E_W" type="car" route="E_to_W" begin="0" end="600" period="12"/>
+    <flow id="car_E_S" type="car" route="E_to_S" begin="0" end="600" period="30"/>
+    <flow id="car_E_N" type="car" route="E_to_N" begin="0" end="600" period="30"/>
+    <flow id="truck_E_W" type="truck" route="E_to_W" begin="0" end="600" period="40"/>
+    <flow id="bus_E_W" type="bus" route="E_to_W" begin="0" end="600" period="75"/>
 
-    <flow id="car_E_W" type="car" route="E_to_W" begin="0" end="3600" probability="0.033"/>
-    <flow id="car_E_S" type="car" route="E_to_S" begin="0" end="3600" probability="0.011"/>
-    <flow id="car_E_N" type="car" route="E_to_N" begin="0" end="3600" probability="0.011"/>
-    <flow id="truck_E_W" type="truck" route="E_to_W" begin="0" end="3600" probability="0.009"/>
-    <flow id="bus_E_W" type="bus" route="E_to_W" begin="0" end="3600" probability="0.005"/>
-
-    <flow id="car_W_E" type="car" route="W_to_E" begin="0" end="3600" probability="0.021"/>
-    <flow id="car_W_N" type="car" route="W_to_N" begin="0" end="3600" probability="0.007"/>
-    <flow id="car_W_S" type="car" route="W_to_S" begin="0" end="3600" probability="0.007"/>
-    <flow id="truck_W_E" type="truck" route="W_to_E" begin="0" end="3600" probability="0.006"/>
+    <flow id="car_W_E" type="car" route="W_to_E" begin="0" end="600" period="15"/>
+    <flow id="car_W_N" type="car" route="W_to_N" begin="0" end="600" period="50"/>
+    <flow id="car_W_S" type="car" route="W_to_S" begin="0" end="600" period="50"/>
 </routes>
