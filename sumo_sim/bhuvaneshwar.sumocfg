@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="bhuvaneshwar.net.xml"/>
+        <route-files value="bhuvaneshwar.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="600"/>
+    </time>
+</configuration>
