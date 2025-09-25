@@ -1,9 +1,9 @@
 <additional>
     <tlLogic id="J1" type="static" programID="rl_program">
-        <phase duration="10" state="GGggrrrrGGggrrrr"/>
-        <phase duration="4"  state="yyyyrrrryyyyrrrr"/>
-        <phase duration="10" state="rrrrGGggrrrrGGgg"/>
-        <phase duration="4"  state="rrrryyyyrrrryyyy"/>
+        <phase duration="10" state="GGGggrrrrrGGGggrrrrr"/>
+        <phase duration="4"  state="yyyyrrrrrryyyyrrrrrr"/>
+        <phase duration="10" state="rrrrrGGGggrrrrrGGGgg"/>
+        <phase duration="4"  state="rrrrryyyyyrrrrryyyyy"/>
     </tlLogic>
 
     <laneAreaDetector id="det_N_0" lane="N1_to_J1_0" freq="1" file="detector_output.xml"/>
